@@ -37,7 +37,7 @@ var paths = {
     input: "src/copy/**/*",
     output: "public/",
   },
-  reload: "./dist/",
+  reload: "./public/",
 };
 
 /**
@@ -268,4 +268,4 @@ exports.watch = series(exports.default, startServer, watchSource);
 
 // Build
 // gulp build
-exports.build = series(exports.default);
+exports.build = series(exports.default, startServer);
