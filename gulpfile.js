@@ -238,6 +238,14 @@ var startServer = function (done) {
   done();
 };
 
+var startLiveServer = function (done) {
+  // Make sure this feature is activated before running
+  if (!settings.reload) return done();
+
+  // Signal completion
+  done();
+};
+
 // Reload the browser when files change
 var reloadBrowser = function (done) {
   if (!settings.reload) return done();
@@ -268,4 +276,4 @@ exports.watch = series(exports.default, startServer, watchSource);
 
 // Build
 // gulp build
-exports.build = series(exports.default, startServer);
+exports.build = series(exports.default, startLiveServer);
