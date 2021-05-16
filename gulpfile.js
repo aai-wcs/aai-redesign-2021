@@ -19,6 +19,7 @@ var settings = {
 
 var paths = {
   input: "src/",
+  // this output needed to change to public for Netlify's default
   output: "public/",
   scripts: {
     input: "src/js/*",
@@ -238,6 +239,7 @@ var startServer = function (done) {
   done();
 };
 
+// Start server for live netlify publish, removed browserSync
 var startLiveServer = function (done) {
   // Make sure this feature is activated before running
   if (!settings.reload) return done();
@@ -274,6 +276,6 @@ exports.default = series(
 // gulp watch
 exports.watch = series(exports.default, startServer, watchSource);
 
-// Build
+// Netlify required build task, without dev source watching, spin up live
 // gulp build
 exports.build = series(exports.default, startLiveServer);
