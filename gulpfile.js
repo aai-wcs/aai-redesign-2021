@@ -265,3 +265,7 @@ exports.default = series(
 // Watch and reload
 // gulp watch
 exports.watch = series(exports.default, startServer, watchSource);
+
+// Build
+// gulp build
+exports.build = series(exports.default);
