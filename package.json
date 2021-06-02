@@ -1,16 +1,16 @@
 {
-  "name": "project-name",
+  "name": "AAI-WCS Web Redesign",
   "version": "0.0.1",
-  "description": "A description for your project.",
+  "description": "Visual Redesign for AAI-COM - HTML/CSS Templates",
   "main": "./dist/your-main-js-file.js",
   "author": {
-    "name": "YOUR NAME",
-    "url": "http://link-to-your-website.com"
+    "name": "Edward Margallo",
+    "url": "https://edwardmargallo.com/"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://link-to-your-git-repo.com"
+    "url": "https://github.com/aai-wcs/aai-redesign-2021"
   },
   "boilerplate": {
     "version": "2.2.6",
