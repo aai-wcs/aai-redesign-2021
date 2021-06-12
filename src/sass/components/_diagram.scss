@@ -1,0 +1,32 @@
+/**
+ * @section Diagram Styles
+ */
+
+.box {
+  border-radius: 0 0.5em 0 0.5em;
+
+  &.box-left,
+  &.box-right {
+    border: 2px solid #ccc;
+  }
+
+  &.box-left {
+    min-height: 10rem;
+  }
+
+  &.box-right {
+    min-height: 5rem;
+    margin-top: 1rem;
+  }
+}
+
+.platform {
+  background: #2a556f;
+}
+
+i {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-color: orange;
+}

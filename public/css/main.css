@@ -1,19 +1,54 @@
-/*! project-name v0.0.1 | (c) 2021 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/*! AAI-WCS Web Redesign v0.0.1 | (c) 2021 Edward Margallo | MIT License | https://github.com/aai-wcs/aai-redesign-2021 */
 /**
  * @section Base Styles
  */
 /* line 5, src/sass/components/_base.scss */
 body {
-  font-size: 125%;
-  margin: 0 auto;
-  max-width: 42em;
-  width: 88%;
+  font-family: "museo-sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-/* line 12, src/sass/components/_base.scss */
-input,
-textarea,
-select,
-button {
-  font: inherit;
+/* line 11, src/sass/components/_base.scss */
+sup {
+  font-size: 0.85rem;
+  vertical-align: top;
+  line-height: 2.7rem;
+}
+
+/**
+ * @section Diagram Styles
+ */
+/* line 5, src/sass/components/_diagram.scss */
+.box {
+  border-radius: 0 0.5em 0 0.5em;
+}
+
+/* line 8, src/sass/components/_diagram.scss */
+.box.box-left, .box.box-right {
+  border: 2px solid #ccc;
+}
+
+/* line 13, src/sass/components/_diagram.scss */
+.box.box-left {
+  min-height: 10rem;
+}
+
+/* line 17, src/sass/components/_diagram.scss */
+.box.box-right {
+  min-height: 5rem;
+  margin-top: 1rem;
+}
+
+/* line 23, src/sass/components/_diagram.scss */
+.platform {
+  background: #2a556f;
+}
+
+/* line 27, src/sass/components/_diagram.scss */
+i {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-color: orange;
 }
