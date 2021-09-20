@@ -27,7 +27,6 @@
     "browser-sync": "2.26.7",
     "cssnano": "4.1.10",
     "del": "3.0.0",
-    "gulp": "4.0.2",
     "gulp-concat": "2.6.1",
     "gulp-flatmap": "1.0.2",
     "gulp-header": "2.0.5",
@@ -42,5 +41,8 @@
     "jshint-stylish": "2.2.1",
     "lazypipe": "1.0.1",
     "node-sass": "4.13.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
   }
 }
