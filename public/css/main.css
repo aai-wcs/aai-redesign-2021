@@ -2,21 +2,18 @@
 /**
  * @section Base Styles
  */
-/* line 5, src/sass/components/_base.scss */
 body {
   font-family: "museo-sans", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
-/* line 11, src/sass/components/_base.scss */
 sup {
   font-size: 0.85rem;
   vertical-align: top;
   line-height: 2.7rem;
 }
 
-/* line 19, src/sass/components/_base.scss */
 .svg-icon {
   display: block;
   width: 32px;
@@ -27,33 +24,24 @@ sup {
 /**
  * @section Diagram Styles
  */
-/* line 5, src/sass/components/_diagram.scss */
 .box {
   border-radius: 0 0.5em 0 0.5em;
 }
-
-/* line 8, src/sass/components/_diagram.scss */
 .box.box-left, .box.box-right {
   border: 2px solid #ccc;
 }
-
-/* line 13, src/sass/components/_diagram.scss */
 .box.box-left {
   min-height: 10rem;
 }
-
-/* line 17, src/sass/components/_diagram.scss */
 .box.box-right {
   min-height: 5rem;
   margin-top: 1rem;
 }
 
-/* line 23, src/sass/components/_diagram.scss */
 .platform {
   background: #2a556f;
 }
 
-/* line 27, src/sass/components/_diagram.scss */
 i {
   display: block;
   width: 64px;
