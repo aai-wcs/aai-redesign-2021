@@ -125,6 +125,59 @@ sup {
   line-height: 2.7rem;
 }
 
+.card-wrapper::before {
+  content: "";
+  position: absolute;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM2SURBVHgB7dCxEcMAEMMw77+Ax01W+MYqeFCNY6HnOex93x/HcV/HOK7knMJxixjHlZxTOG4R47iScwrHLWIcV3JO4bhFjONi7jTncdwixnEl5xSOW8Q4ruScwnGLGMeVnFM4bhHjuJJzCsctYhwXc6c5j+MWMY4rOadw3CLGcSXnFI5bxDiu5JzCcYsYx5WcUzhuEeO4mDvNeRy3iHFcyTmF4xYxjis5p3DcIsZxJecUjlvEOK7knMJxixjHxdxpzuO4RYzjSs4pHLeIcVzJOYXjFjGOKzmncNwixnEl5xSOW8Q4LuZOcx7HLWIcV3JO4bhFjONKzikct4hxXMk5heMWMY4rOadw3CLGcTF3mvM4bhHjuJJzCsctYhxXck7huEWM40rOKRy3iHFcyTmF4xYxjou505zHcYsYx5WcUzhuEeO4knMKxy1iHFdyTuG4RYzjSs4pHLeIcVzMneY8jlvEOK7knMJxixjHlZxTOG4R47iScwrHLWIcV3JO4bhFjONi7jTncdwixnEl5xSOW8Q4ruScwnGLGMeVnFM4bhHjuJJzCsctYhwXc6c5j+MWMY4rOadw3CLGcSXnFI5bxDiu5JzCcYsYx5WcUzhuEeO4mDvNeRy3iHFcyTmF4xYxjis5p3DcIsZxJecUjlvEOK7knMJxixjHxdxpzuO4RYzjSs4pHLeIcVzJOYXjFjGOKzmncNwixnEl5xSOW8Q4LuZOcx7HLWIcV3JO4bhFjONKzikct4hxXMk5heMWMY4rOadw3CLGcTF3mvM4bhHjuJJzCsctYhxXck7huEWM40rOKRy3iHFcyTmF4xYxjou505zHcYsYx5WcUzhuEeO4knMKxy1iHFdyTuG4RYzjSs4pHLeIcVzMneY8jlvEOK7knMJxixjHlZxTOG4R47iScwrHLWIcV3JO4bhFjONi7jTncdwixnEl5xSOW8Q4ruScwnGLGMeVnFM4bhHjuJJzCsctYhwXc6c5j+MWMY4rOadw3CLGcSXnFI5bxDiu5JzCcYsYx5WcUzhuEeO4mDvNeRy3iHFcyTmF4xYxjis5p3DcIsZxJecUjlvEOK7knMJxixjHxdwf4d85BrbTtJAAAAAASUVORK5CYII=);
+  background-repeat: repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  height: calc(100% - 30px);
+  border-radius: 0px 20px;
+}
+
+.card-wrapper {
+  width: 100%;
+  float: left;
+  padding: 30px 0 0 30px;
+  position: relative;
+}
+
+.card-wrapper:hover .card-innerbox {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.card-wrapper:hover::before {
+  opacity: 0.8;
+}
+
+.card-innerbox {
+  width: 100%;
+  float: left;
+  padding: 30px;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 20px;
+  min-height: 350px;
+  height: auto;
+  position: relative;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.card-innerbox a.card-link-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-indent: -9999px;
+}
+
 @media (min-width: 1024px) {
   .container-fluid {
     padding: 0 4rem;
@@ -155,7 +208,7 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase;
   height: 40px;
-  min-width: 225px;
+  min-width: 180px;
   text-align: center;
   display: inline-block;
 }
