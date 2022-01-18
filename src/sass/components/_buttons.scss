@@ -96,7 +96,7 @@ a:hover {
     }
 
     &:hover {
-      transform: translateY(-0.15em);
+      // transform: translateY(-0.15em);
 
       span {
         &::before {
@@ -210,7 +210,7 @@ a:hover {
 
     &:hover {
       //   background-image: linear-gradient(#ff7f44, var(--color-orange));
-      transform: translateY(-0.15em);
+      // transform: translateY(-0.15em);
       //   box-shadow: 0 5px 5px #ddd;
       background-image: linear-gradient(
           rgba(255, 255, 255, 0),

@@ -203,10 +203,6 @@ a:hover {
   transition: 0.3s;
   /* For modern browsers */
 }
-.cta-btn-link.cta-btn-link2 > a:hover {
-  -webkit-transform: translateY(-0.15em);
-          transform: translateY(-0.15em);
-}
 .cta-btn-link.cta-btn-link2 > a:hover span::before {
   opacity: 1;
   left: 0.6em;
@@ -296,8 +292,6 @@ a:hover {
   /* For modern browsers */
 }
 .cta-btn-link.cta-btn-link.transparent1 > a:hover {
-  -webkit-transform: translateY(-0.15em);
-          transform: translateY(-0.15em);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(var(--color-yellow)), color-stop(30%, var(--color-orange)), to(var(--color-orange)));
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(180deg, var(--color-yellow) 0%, var(--color-orange) 30%, var(--color-orange) 100%);
 }
