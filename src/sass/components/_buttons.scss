@@ -4,10 +4,12 @@
 
 $orange: #ff5a10;
 $yellow: #ffbc03;
+$font-museo: "museo_sans";
 
 :root {
   --color-orange: #ff5a10;
   --color-yellow: #ffbc03;
+  --font-museo: "museo_sans";
 }
 
 a {
@@ -66,6 +68,7 @@ a:hover {
   //   }
   // }
   &.cta-btn-link2 > a {
+    min-width: 200px;
     position: relative;
     color: #fff;
     text-shadow: 0 1px 0 #d64000;
@@ -164,7 +167,7 @@ a:hover {
     // }
   }
   &.cta-btn-link.transparent1 > a {
-    min-width: 225px;
+    min-width: 200px;
     display: inline-block;
     padding: 5px 50px 9px;
     border-radius: 50px;
