@@ -24,6 +24,7 @@ a:hover {
 
 .cta-btn-link {
   > a {
+    outline: none;
     border-radius: 50px;
     padding: 0 40px;
 
@@ -202,6 +203,7 @@ a:hover {
 }
 
 .cta-btn-link-transparent2 > a {
+  outline: none;
   display: inline-block;
   color: #333;
   border: none;
@@ -214,12 +216,14 @@ a:hover {
   height: 45px;
   line-height: 45px;
   min-width: 200px;
+  /* for the LEFT side of the pill button */
   background: top left no-repeat
     url("data:image/svg+xml,%0A%3Csvg width='575' height='45' viewBox='0 0 575 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1458_9123)'%3E%3Crect x='1.5' y='1.5' width='597' height='42' rx='21' stroke='url(%23paint0_linear_1458_9123)' stroke-width='3'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1458_9123' x1='300' y1='0' x2='300' y2='45' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFBC03'/%3E%3Cstop offset='1' stop-color='%23FF5A10'/%3E%3C/linearGradient%3E%3CclipPath id='clip0_1458_9123'%3E%3Crect width='575' height='45' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
   -webkit-transition: 0.3s; /* For Safari 3.0 to 6.0 */
   transition: 0.3s; /* For modern browsers */
 
   span {
+    /* for the inner right CHEVRON */
     &::before {
       opacity: 0;
       border-style: solid;
@@ -246,20 +250,24 @@ a:hover {
     height: 45px;
     top: 0;
     right: 0;
+    /* for the RIGHT side of the pill button */
     background: top left no-repeat
       url("data:image/svg+xml,%0A%3Csvg width='25' height='45' viewBox='0 0 25 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1458_9124)'%3E%3Crect x='-573.5' y='1.5' width='597' height='42' rx='21' stroke='url(%23paint0_linear_1458_9124)' stroke-width='3'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1458_9124' x1='-275' y1='0' x2='-275' y2='45' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFBC03'/%3E%3Cstop offset='1' stop-color='%23FF5A10'/%3E%3C/linearGradient%3E%3CclipPath id='clip0_1458_9124'%3E%3Crect width='25' height='45' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
   }
 
   &:hover {
+    /* for the HOVER LEFT side of the pill button */
     background: top left no-repeat
       url("data:image/svg+xml,%0A%3Csvg width='575' height='45' viewBox='0 0 575 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1462_9051)'%3E%3Crect x='1.5' y='1.5' width='597' height='42' rx='21' stroke='url(%23paint0_linear_1462_9051)' stroke-width='3'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1462_9051' x1='300' y1='0' x2='300' y2='45' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFBC03'/%3E%3Cstop offset='0.229167' stop-color='%23FF5A10'/%3E%3C/linearGradient%3E%3CclipPath id='clip0_1462_9051'%3E%3Crect width='575' height='45' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
 
     &::after {
+      /* for the HOVER RIGHT side of the pill button */
       background: top left no-repeat
         url("data:image/svg+xml,%0A%3Csvg width='25' height='45' viewBox='0 0 25 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1462_9064)'%3E%3Crect x='-573.5' y='1.5' width='597' height='42' rx='21' stroke='url(%23paint0_linear_1462_9064)' stroke-width='3'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1462_9064' x1='-275' y1='0' x2='-275' y2='45' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFBC03'/%3E%3Cstop offset='0.229167' stop-color='%23FF5A10'/%3E%3C/linearGradient%3E%3CclipPath id='clip0_1462_9064'%3E%3Crect width='25' height='45' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
     }
 
     span {
+      /* show the chevron on hover */
       &::before {
         opacity: 0.8;
         left: 0.6em;
