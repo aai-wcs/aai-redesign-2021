@@ -27,7 +27,6 @@
     "gulp-jshint": "^2.1.0",
     "gulp-optimize-js": "^1.1.0",
     "gulp-terser": "^2.0.1",
-    "jshint": "^2.13.1",
     "sass": "^1.41.1"
   },
   "dependencies": {
@@ -43,6 +42,7 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-svgmin": "^4.0.1",
+    "jshint": "^2.13.4",
     "jshint-stylish": "^2.2.1",
     "json-schema": "^0.4.0",
     "lazypipe": "^1.0.2",
