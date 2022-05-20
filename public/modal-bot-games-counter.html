@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="AAI Visual Redesign - Exploration">
+	<meta name="author" content="Edward Margallo">
+	<meta name="generator" content="gulp, static site generated">
+	<title>AAI Visual Redesign - Exploration</title>
+
+	<!-- Bootstrap core CSS -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<style>
+		@font-face {
+			font-family: "museo_sans";
+			src: url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_100-webfont.eot");
+			src: url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_100-webfont.eot?#iefix") format("embedded-opentype"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_100-webfont.woff2") format("woff2"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_100-webfont.woff") format("woff"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_100-webfont.ttf") format("truetype"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_100-webfont.svg#museo_sans100") format("svg");
+			font-weight: 100;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: "museo_sans";
+			src: url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_300-webfont.eot");
+			src: url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_300-webfont.eot?#iefix") format("embedded-opentype"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_300-webfont.woff2") format("woff2"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_300-webfont.woff") format("woff"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_300-webfont.ttf") format("truetype"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_300-webfont.svg#museo_sans300") format("svg");
+			font-weight: 300;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: "museo_sans";
+			src: url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_500-webfont.eot");
+			src: url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_500-webfont.eot?#iefix") format("embedded-opentype"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_500-webfont.woff2") format("woff2"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_500-webfont.woff") format("woff"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_500-webfont.ttf") format("truetype"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_500-webfont.svg#museo_sans500") format("svg");
+			font-weight: 500;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: "museo_sans";
+			src: url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_700-webfont.eot");
+			src: url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_700-webfont.eot?#iefix") format("embedded-opentype"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_700-webfont.woff2") format("woff2"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_700-webfont.woff") format("woff"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_700-webfont.ttf") format("truetype"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_700-webfont.svg#museo_sans700") format("svg");
+			font-weight: 700;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: "museo_sans";
+			src: url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_900-webfont.eot");
+			src: url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_900-webfont.eot?#iefix") format("embedded-opentype"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_900-webfont.woff2") format("woff2"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_900-webfont.woff") format("woff"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_900-webfont.ttf") format("truetype"),
+				url("https://www.automationanywhere.com/templates/aa-sitetemplate/fonts/museo_sans/MuseoSans_900-webfont.svg#museo_sans900") format("svg");
+			font-weight: 900;
+			font-style: normal;
+		}
+
+		body {
+			padding-top: 7rem;
+		}
+
+		/* @media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		} */
+	</style>
+	<style>
+		/*-----START Bootstrap Modal CSS------------*/
+		.modal-confirm {
+			color: #636363;
+			width: 600px !important;
+		}
+
+		.modal-confirm .modal-content {
+			padding: 0;
+			border-radius: 10px;
+			border: none;
+		}
+
+		.modal-confirm .modal-header {
+			border-bottom: none;
+			position: relative;
+			height: 0 !important;
+			padding: 0 !important;
+		}
+
+		.modal-confirm .modal-banner {
+			overflow: hidden;
+			height: 150px;
+			border-radius: 10px 10px 0 0;
+		}
+
+		.modal-confirm .modal-banner {
+			background: #222;
+		}
+
+		.modal-confirm h4 {
+			text-align: center;
+			font-size: 26px;
+
+			font-weight: 600;
+			color: #333;
+		}
+
+		.modal-confirm .form-control,
+		.modal-confirm .btn {
+			min-height: 40px;
+			border-radius: 30px !important;
+			min-width: 100px;
+			background-color: #FF5A10 !important;
+		}
+
+		.modal-confirm .close {
+			position: absolute;
+			top: -5px;
+			right: -5px;
+		}
+
+		.modal-confirm .modal-footer {
+			border: none;
+			text-align: center;
+			border-radius: 5px;
+			font-size: 13px;
+			justify-content: center !important;
+		}
+
+		.modal-confirm .icon-box {
+			color: #fff;
+			position: absolute;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+			top: -40px;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			z-index: 9;
+			/* background: #82ce34; */
+			padding-top: 25px;
+
+			text-align: center;
+			background: linear-gradient(180deg, #FFBC03 0%, #FF5A10 100%);
+
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+		}
+
+		.modal-confirm .icon-box i {
+			font-size: 46px;
+			position: relative;
+			top: 3px;
+		}
+
+		.modal-confirm.modal-dialog {
+			margin-top: 80px;
+		}
+
+		.modal-confirm .btn {
+			color: #fff;
+			border-radius: 4px;
+			background: #82ce34;
+			text-decoration: none;
+			transition: all 0.4s;
+			line-height: normal;
+			border: none;
+		}
+
+		.modal-confirm .btn:hover,
+		.modal-confirm .btn:focus {
+			background: #6fb32b;
+			outline: none;
+		}
+
+		/* .modal-confirm .modal-body {
+			padding: 0 30px;
+		} */
+
+		.trigger-btn {
+			display: inline-block;
+			margin: 100px auto;
+		}
+
+		/*-----END Bootstrap Modal CSS------------*/
+		/*-----START Bootstrap Modal Card CSS-----*/
+
+		.card {
+			overflow: hidden;
+			border-radius: 10px;
+		}
+
+		.card-body .rotate {
+			z-index: 8;
+			float: right;
+			height: 100%;
+		}
+
+		.card-body .rotate i {
+			color: rgba(20, 20, 20, 0.15);
+			position: absolute;
+			left: 0;
+			left: auto;
+			right: -10px;
+			bottom: 0;
+			display: block;
+			-webkit-transform: rotate(-44deg);
+			-moz-transform: rotate(-44deg);
+			-o-transform: rotate(-44deg);
+			-ms-transform: rotate(-44deg);
+			transform: rotate(-44deg);
+		}
+
+		.card h2.score-label,
+		.card h2.score-value {
+			font-weight: 500;
+		}
+
+		.card h2.score-label {
+			color: #FFBC03;
+			font-size: 1rem;
+			text-transform: uppercase;
+			font-weight: 500 !important;
+			line-height: 1.6rem !important;
+			vertical-align: middle;
+		}
+
+		.card h3.score-value {
+			color: white;
+			font-size: 1.8rem;
+			font-weight: 600;
+			line-height: 2rem;
+
+		}
+
+		.material-icons {
+			color: #fff;
+			vertical-align: middle;
+			display: inline-block !important;
+			/* padding-top: 5px; */
+			font-size: 22px;
+			line-height: 1rem !important;
+			/* Support for all WebKit browsers. */
+			-webkit-font-smoothing: antialiased;
+			/* Support for Safari and Chrome. */
+			text-rendering: optimizeLegibility;
+
+			/* Support for Firefox. */
+			-moz-osx-font-smoothing: grayscale;
+
+			/* Support for IE. */
+			font-feature-settings: 'liga';
+
+		}
+
+		.bg-complete {
+			background-color: #333;
+		}
+
+		.bg-value {
+			background-color: #444;
+		}
+
+		/*-----END Bootstrap Modal Card CSS-----*/
+	</style>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-md fixed-top">
+		<a class="navbar-brand" href="#"><img src="images/aai-A-logo.svg" width="32"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+			aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</nav>
+
+
+	<main role="main" class="container-fluid text-center">
+
+		<!-- Button HTML (to Trigger Modal) -->
+		<a href="#myModal" class="btn btn-primary" data-toggle="modal">Click to Open Confirm Modal</a>
+
+		<!-- Start Modal -->
+		<div id="myModal" class="modal fade">
+			<div class="modal-dialog modal-confirm modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="icon-box" id='icon-box'>
+							<i class="material-icons">&#xE876;</i>
+						</div>
+					</div>
+					<div class="modal-banner"
+						style="background-image: url(images/bot-games-2022-modal-header@2x.png); background-size: cover;">
+						<!-- <img src="images/bot-games-2022-modal-header@2x.png" alt="Automation Anywhere Botgames" /> -->
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-12">
+									<h4 class="modal-title mx-auto mb-4">Awesome! You completed the Bot Games Challenge
+										3
+										Successfully!</h4>
+									<span id="shareonsocial"></span>
+								</div>
+								<div class="col-sm-6 mb-3">
+									<div class="card card-outline m-x-auto m-b-12">
+										<div class="col-md-12 text-center bg-complete p-y-1" id='processing-time-head'
+											style='-ms-flex-preferred-size:auto;'>
+											<h2 class='score-label my-2'><i class="material-icons">alarm</i> Time</h2>
+										</div>
+										<div class="col-md-12 text-center p-y-1 bg-value"
+											style='-ms-flex-preferred-size:auto;'>
+											<h3 class='score-value my-3' id='processing-time'>78 seconds</h3>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 mb-3">
+									<div class="card card-outline m-x-auto m-b-12">
+										<div class="col-md-12 text-center bg-complete p-y-1" id='accuracy-head'
+											style='-ms-flex-preferred-size:auto;'>
+											<h2 class='score-label my-2'><i class="material-icons">speed</i> Accuracy
+											</h2>
+										</div>
+										<div class="col-md-12 text-center p-y-1 bg-value"
+											style='-ms-flex-preferred-size:auto;'>
+											<h3 class='score-value my-3' id='accuracy'>100%</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-success btn-modal-ok" id='btn-modal' data-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main><!-- /.container -->
+
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+		crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
