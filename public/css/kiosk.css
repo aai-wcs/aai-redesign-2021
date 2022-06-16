@@ -235,7 +235,7 @@ main {
 section {
   position: relative;
   padding-top: 280px;
-  height: 95vh;
+  height: 97vh;
   background: #fff;
 }
 section > .container-fluid {
@@ -249,9 +249,9 @@ section::after {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 200px;
+  height: 140px;
   background: #ddd;
-  background: no-repeat bottom url(/images/divider-curve-bottom.svg);
+  background: no-repeat top center url(/images/divider-curve-bottom.svg);
   background-size: 100%;
 }
 section p {
