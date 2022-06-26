@@ -7,12 +7,15 @@ if (!Element.prototype.matches) {
 	Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
 }
 document.addEventListener('click', (function (event) {
-	if (!event.target.matches('#platform-discover')) return;
-	alert('You clicked me!');
+	// if (!event.target.matches('#platform-discover')) return;
+	// alert('You clicked me!');
 
 	// check this.href contains #
 	// if true = var targetDiv
 	// scroll to targetDiv
+	var anchor = document.querySelector('#anchor');
+anchor.scrollIntoView();
+
 }), false);
 
 // TO DO
