@@ -287,9 +287,12 @@ section .row-logos img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-section iframe {
+section iframe,
+section video {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section .qrcode {
   z-index: 2;
