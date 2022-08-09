@@ -48,7 +48,7 @@
     "lazypipe": "^1.0.2",
     "lodash.template": "^4.5.0",
     "minimist": "^1.2.6",
-    "netlify-cli": "^8.11.0",
+    "netlify-cli": "^8.19.3",
     "node-sass": "^7.0.1",
     "postcss": "^8.3.6",
     "shelljs": "^0.8.5",
