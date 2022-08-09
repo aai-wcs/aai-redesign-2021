@@ -221,6 +221,10 @@ body a:hover {
   right: -3.5rem;
 }
 
+.modal-backdrop.show {
+  opacity: 0.85;
+}
+
 h1,
 h2,
 h3,

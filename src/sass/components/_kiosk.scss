@@ -250,6 +250,10 @@ body {
   }
 }
 
+.modal-backdrop.show {
+  opacity: .85;
+}
+
 h1,
 h2,
 h3,
