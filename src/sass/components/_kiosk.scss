@@ -358,13 +358,19 @@ section {
   .row-cards {
 
     .mdi {
-      font-size: 1.5rem;
+      font-size: 2rem;
+    }
+
+    h5 {
+      font-size: 0.85rem !important;
+      font-weight: 700 !important;
+      color: $blue;
     }
 
     p {
-      font-size: 0.75rem;
+      font-size: 0.8rem;
       line-height: 1.2rem;
-
+      // font-weight: 500;
     }
 
   }
@@ -373,12 +379,14 @@ section {
     h5 {
       font-size: 1.5rem !important;
       font-weight: 900 !important;
+      color: $blue;
     }
+
+
   }
 
   .row-logos {
     margin-top: 2rem;
-    ;
 
     img {
       width: 80%;
