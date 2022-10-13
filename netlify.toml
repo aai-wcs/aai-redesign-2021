@@ -8,3 +8,9 @@ command = "gulp build-preview"
 # build a branch with debug (optional)
 [context.branch-deploy]
 command = "gulp build-debug"
+# Below reference: https://answers.netlify.com/t/access-control-allow-origin-policy/1813/40
+[[headers]]
+# Define which paths this specific [[headers]] block will cover.
+for = "/*"
+[headers.values]
+Access-Control-Allow-Origin = "*"
