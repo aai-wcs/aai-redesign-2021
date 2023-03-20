@@ -1,4 +1,4 @@
-/*! AAI-WCS Web Redesign v0.0.1 | (c) 2022 Edward Margallo | MIT License | https://github.com/aai-wcs/aai-redesign-2021 */
+/*! AAI-WCS Web Redesign v0.0.1 | (c) 2023 Edward Margallo | MIT License | https://github.com/aai-wcs/aai-redesign-2021 */
 /**
  * @section Font Styles
  */
@@ -504,4 +504,55 @@ i {
   width: 64px;
   height: 64px;
   background-color: orange;
+}
+
+/**
+ * @section HP UI Styles
+ */
+.ribbon-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 80px;
+  -webkit-column-gap: 120px;
+     -moz-column-gap: 120px;
+          column-gap: 120px;
+  min-height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+  background-color: #eee;
+}
+.ribbon-logos > img {
+  max-width: 200px;
+  max-height: 80px;
+}
+
+.app-image-canvas {
+  min-height: 600px;
+  background: url(../images/hp-ui/bg-app.png);
+  background-size: auto 100%;
+}
+.app-image-canvas > .app-planet.app-planet-1 {
+  top: 0;
+  left: 200px;
+}
+.app-image-canvas > .app-planet.app-planet-2 {
+  top: 100px;
+  left: 50px;
+}
+.app-image-canvas > .app-planet.app-planet-3 {
+  top: 150px;
+  left: 125px;
+}
+.app-image-canvas > .app-rocket {
+  top: 50px;
+  left: 400px;
+  width: auto;
+  height: 300px;
 }

@@ -1,0 +1,59 @@
+/**
+ * @section HP UI Styles
+ */
+
+.ribbon-logos {
+  display: flex;
+  flex-direction: row;
+  padding-left: 80px;
+  column-gap: 120px;
+  min-height: 200px;
+  align-items: center;
+  overflow-x: hidden;
+  background-color: #eee;
+
+  >img {
+    max-width: 200px;
+    max-height: 80px;
+    // background-color: #ccc;
+  }
+}
+
+.app-image-canvas {
+  min-height: 600px;
+  background: url(../images/hp-ui/bg-app.png);
+  background-size: auto 100%;
+
+  >.app-planet {
+
+    &.app-planet-1 {
+      top: 0;
+      left: 200px;
+    }
+
+    &.app-planet-2 {
+      top: 100px;
+      left: 50px;
+    }
+
+    &.app-planet-3 {
+      top: 150px;
+      left: 125px;
+    }
+  }
+
+  >.app-rocket {
+    top: 50px;
+    left: 400px;
+    width: auto;
+    height: 300px;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  // .container-fluid {
+  //   padding: 0 4rem;
+  // }
+}
